@@ -5,4 +5,3 @@ Sem 2
 ### `npm start`
 
 START PROJECT
-
