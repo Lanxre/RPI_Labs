@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from './Components/Home/Home';
+import Rating from './Components/Rating/Rating';
+import Tags from "./Components/Tags/Tags";
+import Posts from "./Components/Posts/Posts"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/first-task" element={<Rating count = "6"
+                                                           selectStars="3"/>} />
+          <Route exact path="/second-task" element={<Tags tags={[
+            {title: "1", type:"h1"},
+            {title: "2", type:"h2"},
+            {title: "3", type:"h3"},
+          ]}/>}/>
+          <Route exact path="/third-task" element={<Posts options={{limit: 10, count: 47}}/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
