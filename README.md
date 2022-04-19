@@ -2,6 +2,8 @@
 
 Sem 2
 
+### `npm init`
+
 ### `npm start`
 
 START PROJECT
