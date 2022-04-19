@@ -2,7 +2,7 @@
 
 Sem 2
 
-### `npm init`
+### `npm install`
 
 DEPEDENSIVE
 
