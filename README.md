@@ -4,6 +4,8 @@ Sem 2
 
 ### `npm init`
 
+DEPEDENSIVE
+
 ### `npm start`
 
 START PROJECT
