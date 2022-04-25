@@ -9,6 +9,8 @@ import Rating from './Components/Rating/Rating';
 import Tags from "./Components/Tags/Tags";
 import Posts from "./Components/Posts/Posts"
 import Grud from "./Components/Grud/Grud";
+import GrudNew from "./Components/Grud/GrudNew";
+import GrudUpdate from "./Components/Grud/GrudUpdate";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           ]}/>}/>
           <Route exact path="/third-task" element={<Posts options={{limit: 10, count: 47}}/>}/>
           <Route exact path="/grud" element={<Grud/>}/>
+          <Route exact path="/grud/new/:type" element={<GrudNew/>}/>
+          <Route exact path="/grud/:type/:id" element={<GrudUpdate/>}/>
         </Routes>
       </BrowserRouter>
     </div>
