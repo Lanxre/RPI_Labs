@@ -47,7 +47,7 @@ function Posts({options}) {
         <ul className="t4">
             <li onClick={() =>{
                 setCurrentPage(currentPage - 1 >= 0 ? currentPage - 1 : 1)
-                currentPage - 1 >= 0 ? request(currentPage - 1).then(res => {
+                currentPage - 1 >= 1 ? request(currentPage - 1).then(res => {
                     setPosts(res)
                     document.querySelectorAll('li[index]').forEach(item => {
                         item.getAttribute('index') == currentPage - 1 ? 

@@ -8,6 +8,7 @@ import Home from './Components/Home/Home';
 import Rating from './Components/Rating/Rating';
 import Tags from "./Components/Tags/Tags";
 import Posts from "./Components/Posts/Posts"
+import Grud from "./Components/Grud/Grud";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             {title: "3", type:"h3"},
           ]}/>}/>
           <Route exact path="/third-task" element={<Posts options={{limit: 10, count: 47}}/>}/>
+          <Route exact path="/grud" element={<Grud/>}/>
         </Routes>
       </BrowserRouter>
     </div>
