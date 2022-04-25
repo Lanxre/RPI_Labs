@@ -2,6 +2,10 @@
 
 Sem 2
 
+### `npm install`
+
+DEPEDENSIVE
+
 ### `npm start`
 
 START PROJECT
